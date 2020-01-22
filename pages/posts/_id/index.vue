@@ -4,7 +4,6 @@
       <h1 class="post-title">Title</h1>
       <div class="post-details">
         <div class="post-detail">Last updated on: xx</div>
-        <div class="post-detail">Written by: xxxx</div>
       </div>
       <p class="post-content">
         Dessert powder caramels tart marzipan bonbon pudding. Caramels chupa
