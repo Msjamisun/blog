@@ -1,6 +1,6 @@
 <template>
   <div class="admin-page">
-      <section class="new-posts">
+      <section class="new-post">
           <button @click="$router.push('/admin/new-post')">Create Post</button>
       </section>
       <section class="exisiting-posts">
@@ -30,7 +30,7 @@ export default {
   padding-bottom: 10px;
 }
 
-.existing-posts h1 {
+.exisiting-posts h1 {
   text-align: center;
 }
 </style>
