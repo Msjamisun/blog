@@ -4,19 +4,17 @@
       <!-- <h1>Oh no, not another bikini girl blog...</h1> -->
     </section>
     <section class="featured-posts">
-      <PostPreview id="1" thumbnail="https://images.unsplash.com/photo-1539798488725-7387f3229c49?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" title="A little about why" previewText="Why did I build this site?" />
-      <PostPreview id="2" thumbnail="https://images.unsplash.com/photo-1532384748853-8f54a8f476e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" title="My competiton history" previewText="When I got bit by the comp bug..." />
-      <PostPreview id="3" thumbnail="https://images.unsplash.com/photo-1519859660545-3dea8ddf683c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" title="Current 2020 Goals" previewText="Cause it's Janurary..." />
+      <PostList />
     </section>
   </div>
 </template>
 
 <script>
-import PostPreview from "@/components/posts/PostPreview";
+import PostList from "@/components/posts/PostList";
 
 export default {
   components: {
-    PostPreview
+    PostList
   }
 };
 </script>
@@ -27,7 +25,7 @@ export default {
   position: relative;
   padding: 30px;
   box-sizing: border-box;
-  background-image: url('~assets/images/cactus.jpeg');
+  background-image: url("~assets/images/cactus.jpeg");
   background-position: center;
   background-size: cover;
 }
