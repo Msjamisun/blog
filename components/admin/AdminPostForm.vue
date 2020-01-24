@@ -1,8 +1,7 @@
 <template>
-  <!-- .prevent default http request -->
   <form @submit.prevent="onSave">
+    <AppInputControl v-model="editedPost.author">Author Name</AppInputControl>
     <AppInputControl v-model="editedPost.title">Title</AppInputControl>
-    <AppInputControl v-model="editedPost.author">Author</AppInputControl>
     <AppInputControl v-model="editedPost.thumbnailLink"
       >Thumbnail Link</AppInputControl
     >
@@ -21,18 +20,27 @@
 </template>
 
 <script>
-import AppButton from "@/components/ui/AppButton";
 import AppInputControl from "@/components/ui/AppInputControl";
+import AppButton from "@/components/ui/AppButton";
 
 export default {
+  components: {
+    AppInputControl,
+    AppButton
+  },
+  props: {
+    post: {
+      type: Object,
+      required: false
+    }
+  },
   data() {
     return {
-        // ternary operation to check if the method post has content, if not it will load the editedPost object
       editedPost: this.post
         ? { ...this.post }
         : {
-            title: "",
             author: "",
+            title: "",
             thumbnailLink: "",
             content: ""
           }
@@ -40,20 +48,12 @@ export default {
   },
   methods: {
     onSave() {
+      // Save the post
       console.log(this.editedPost);
     },
     onCancel() {
+      // Navigate back
       this.$router.push("/admin");
-    }
-  },
-  components: {
-    AppButton,
-    AppInputControl
-  },
-  props: {
-    post: {
-      type: Object,
-      required: false
     }
   }
 };
