@@ -1,16 +1,14 @@
 <template>
   <div class="single-post-page">
     <section class="post">
-      <h1 class="post-title">Title</h1>
+      <h1 class="post-title">{{ loadedPost.title }}</h1>
       <div class="post-details">
-        <div class="post-detail">Last updated on: xx</div>
+        <div class="post-detail">
+          Last updated on: {{ loadedPost.updatedDate }}
+        </div>
       </div>
       <p class="post-content">
-        Dessert powder caramels tart marzipan bonbon pudding. Caramels chupa
-        chups soufflé halvah. Dragée cupcake bear claw jujubes apple pie
-        liquorice candy canes. Sesame snaps bear claw pie wafer topping
-        chocolate cake tiramisu cookie. Jelly beans sweet croissant. Danish
-        caramels brownie toffee.
+        {{ loadedPost.content }}
       </p>
     </section>
     <section class="post-feedback">
@@ -23,6 +21,27 @@
     </section>
   </div>
 </template>
+
+<script>
+export default {
+  asyncData(context, callback) {
+    setTimeout(() => {
+      callback(null, {
+        loadedPost: {
+          id: "1",
+          title: "A little about why",
+          previewText: "Why did I build this site?",
+          // TO DO: Replace to take current posted date
+          updatedDate: new Date(),
+          content: "Blah, blah, blah, blah",
+          thumbnail:
+            "https://images.unsplash.com/photo-1552767037-d39312340e99?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+        }
+      });
+    }, 1000);
+  }
+};
+</script>
 
 <style scoped>
 .single-post-page {
