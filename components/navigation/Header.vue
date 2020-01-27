@@ -3,14 +3,14 @@
   <header class="the-header">
     <SideNavToggle @toggle="$emit('sidenavToggle')" />
     <div class="logo">
-      <nuxt-link to="/">KMJ BLOG</nuxt-link>
+      <nuxt-link to="/">Kathryn Marie Jamison</nuxt-link>
     </div>
     <div class="spacer"></div>
     <div class="navigation-items">
       <ul class="nav-list">
         <li class="nav-item"><nuxt-link to="/posts">Blog</nuxt-link></li>
         <li class="nav-item"><nuxt-link to="/about">About</nuxt-link></li>
-        <!-- <li class="nav-item"><nuxt-link to="/admin">Admin</nuxt-link></li> -->
+        <li class="nav-item"><nuxt-link to="/admin">Admin</nuxt-link></li>
       </ul>
     </div>
   </header>
