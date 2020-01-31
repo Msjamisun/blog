@@ -1,6 +1,5 @@
 <template>
   <section class="post-list">
-    <!-- is-admin - vue always you to use custom props in kabob case to pass to components -->
     <PostPreview
       v-for="post in posts"
       :key="post.id"
@@ -8,16 +7,14 @@
       :is-admin="isAdmin"
       :thumbnail="post.thumbnail"
       :title="post.title"
-      :previewText="post.previewText"
-    />
+      :previewText="post.previewText" />
   </section>
 </template>
 
 <script>
-import PostPreview from "@/components/posts/PostPreview";
+import PostPreview from '@/components/posts/PostPreview'
 
 export default {
-  name: "PostList",
   components: {
     PostPreview
   },
@@ -31,10 +28,12 @@ export default {
       required: true
     }
   }
-};
+}
 </script>
 
+
 <style scoped>
+
 .post-list {
   display: flex;
   padding: 20px;

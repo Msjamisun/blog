@@ -1,12 +1,12 @@
 <template>
   <div class="admin-page">
-      <section class="new-post">
-          <AppButton @click="$router.push('/admin/new-post')">Create Post</AppButton>
-      </section>
-      <section class="exisiting-posts">
-          <h1>Exisiting Posts</h1>
-          <PostList isAdmin />
-      </section>
+    <section class="new-post">
+      <AppButton @click="$router.push('/admin/new-post')">Create Post</AppButton>
+    </section>
+    <section class="existing-posts">
+      <h1>Existing Posts</h1>
+      <PostList isAdmin />
+    </section>
   </div>
 </template>
 
@@ -15,11 +15,11 @@ import PostList from '@/components/posts/PostList'
 import AppButton from '@/components/ui/AppButton'
 
 export default {
-    layout: "admin",
-    components: {
-        PostList,
-        AppButton
-    }
+  layout: 'admin',
+  components: {
+    PostList,
+    AppButton
+  }
 }
 </script>
 
@@ -34,7 +34,7 @@ export default {
   padding-bottom: 10px;
 }
 
-.exisiting-posts h1 {
+.existing-posts h1 {
   text-align: center;
 }
 </style>

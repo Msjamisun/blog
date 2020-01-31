@@ -3,8 +3,7 @@
     <article>
       <div
         class="post-thumbnail"
-        :style="{ backgroundImage: 'url(' + thumbnail + ')'}"
-      ></div>
+        :style="{backgroundImage: 'url(' + thumbnail + ')'}"></div>
       <div class="post-content">
         <h1>{{ title }}</h1>
         <p>{{ previewText }}</p>
@@ -15,7 +14,7 @@
 
 <script>
 export default {
-  name: "PostPreview",
+  name: 'PostPreview',
   props: {
     id: {
       type: String,
@@ -40,12 +39,12 @@ export default {
   },
   computed: {
     postLink() {
-      // ? means like, check this please, is it true or false?
       return this.isAdmin ? '/admin/' + this.id : '/posts/' + this.id
     }
   }
-};
+}
 </script>
+
 
 <style scoped>
 .post-preview {
