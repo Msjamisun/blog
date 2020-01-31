@@ -2,8 +2,11 @@
   <form @submit.prevent="onSave">
     <AppInputControl v-model="editedPost.author">Author Name</AppInputControl>
     <AppInputControl v-model="editedPost.title">Title</AppInputControl>
-    <AppInputControl v-model="editedPost.thumbnailLink"
+    <AppInputControl v-model="editedPost.thumbnail"
       >Thumbnail Link</AppInputControl
+    >
+    <AppInputControl control-type="textarea" v-model="editedPost.previewText"
+      >Preview Text</AppInputControl
     >
     <AppInputControl control-type="textarea" v-model="editedPost.content"
       >Content</AppInputControl
@@ -41,15 +44,15 @@ export default {
         : {
             author: "",
             title: "",
-            thumbnailLink: "",
+            thumbnail: "",
+            previewText: "",
             content: ""
           }
     };
   },
   methods: {
     onSave() {
-      // Save the post
-      console.log(this.editedPost);
+      this.$emit("submit", this.editedPost);
     },
     onCancel() {
       // Navigate back
