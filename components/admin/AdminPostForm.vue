@@ -8,7 +8,6 @@
     <AppInputControl control-type="textarea" v-model="editedPost.previewText"
       >Preview Text</AppInputControl
     >
-    <AppInputControl v-model="editedPost.updatedDate">Update Date</AppInputControl>
     <AppInputControl control-type="textarea" v-model="editedPost.content"
       >Content</AppInputControl
     >
