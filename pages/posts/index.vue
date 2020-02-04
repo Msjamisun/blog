@@ -13,7 +13,7 @@ export default {
   },
   computed: {
     loadedPosts() {
-      this.$store.getters.loadedPosts
+      return this.$store.getters.loadedPosts
     }
   }
 };

@@ -8,22 +8,26 @@
 
 <script>
 import AdminPostForm from "@/components/admin/AdminPostForm";
+import axios from "axios";
 
 export default {
   layout: "admin",
   components: {
     AdminPostForm
   },
-  data() {
-    return {
-      loadedPost: {
-        author: "Kathryn",
-        title: "What do I drive?",
-        content: "It all started with my dad...",
-        thumbnailLink:
-          "https://images.unsplash.com/photo-1577658569665-5509138cb945?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80"
-      }
-    };
+  asyncdata(context) {
+    return axios
+      .get(
+        "https://nuxt-blog-b2aa5.firebaseio.com/posts/" +
+          context.params.postId +
+          ".json"
+      )
+      .then(res => {
+        return {
+          loadedPost: res.data
+        };
+      })
+      .catch(e => context.error());
   }
 };
 </script>
