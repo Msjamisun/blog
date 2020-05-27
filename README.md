@@ -1,6 +1,6 @@
 # blog
 
-> My kickass Nuxt.js project
+> A blog that it so dusty
 
 ## Build Setup
 
