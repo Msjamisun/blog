@@ -1,6 +1,6 @@
 # blog
 
-> A blog that it so dusty
+> A blog that is so dusty
 
 ## Build Setup
 
