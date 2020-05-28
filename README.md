@@ -1,6 +1,6 @@
 # blog
 
-> A blog that is so dusty
+> A blog that is so dusty it'll make your grandma cough
 
 ## Build Setup
 
