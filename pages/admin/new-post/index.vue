@@ -3,6 +3,7 @@
     <section class="new-post-form">
       <AdminPostForm @submit="onSubmitted" />
     </section>
+    <p>This is for a test</p>
   </div>
 </template>
 
