@@ -3,7 +3,9 @@
     <section class="new-post-form">
       <AdminPostForm @submit="onSubmitted" />
     </section>
-    <p>FanSided is awesome</p>
+    <section>
+      <p>This blog is dusty</p>
+    </section>
   </div>
 </template>
 
