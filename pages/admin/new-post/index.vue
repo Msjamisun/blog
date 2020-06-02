@@ -2,10 +2,8 @@
   <div class="admin-new-post-page">
     <section class="new-post-form">
       <AdminPostForm @submit="onSubmitted" />
-    </section>
-    <section>
-      <p>This blog is dusty</p>
-    </section>
+    </section> 
+    <p>This is a dusty blog</p>
   </div>
 </template>
 
