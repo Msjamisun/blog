@@ -3,7 +3,7 @@
     <section class="new-post-form">
       <AdminPostForm @submit="onSubmitted" />
     </section>
-    <p>This is for a test</p>
+    <p>FanSided is awesome</p>
   </div>
 </template>
 
