@@ -3,7 +3,7 @@
   <header class="the-header">
     <SideNavToggle @toggle="$emit('sidenavToggle')" />
     <div class="logo">
-      <nuxt-link to="/">Kathryn Marie Jamison</nuxt-link>
+      <nuxt-link to="/">Kathryn M Jamison</nuxt-link>
     </div>
     <div class="spacer"></div>
     <div class="navigation-items">
