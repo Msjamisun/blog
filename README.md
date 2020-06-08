@@ -1,7 +1,10 @@
+<<<<<<< HEAD
 # blog
 
 > A blog that is so dusty it'll make your grandma cough.
 
+=======
+>>>>>>> origin/master
 ## Build Setup
 
 ``` bash
