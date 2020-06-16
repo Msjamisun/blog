@@ -1,6 +1,6 @@
 <template>
   <div class="error-page">
-    <h1>What did you do? You broke my site?</h1>
+    <h1>What did you do? You broke my site? How rude.</h1>
     <p>Back to <a href="/">home you go...</a></p>
   </div>
 </template>
