@@ -4,6 +4,7 @@
     <SideNavToggle @toggle="$emit('sidenavToggle')" />
     <div class="logo">
       <nuxt-link to="/">Kathryn M Jamison</nuxt-link>
+      <p>FanSided Project Manager</p>
     </div>
     <div class="spacer"></div>
     <div class="navigation-items">
